@@ -1,0 +1,36 @@
+.container {
+  .header {
+    box-sizing: border-box;
+    background-color: #282b33;
+
+    .ant-menu-horizontal {
+      border: 0;
+    }
+    .ant-menu {
+      background: none;
+      color: #fff;
+    }
+    .ant-menu-item {
+      border: 0;
+      transition: all 0.3s;
+    }
+    .ant-menu-item-selected,
+    .ant-menu-item-active {
+      border: 0;
+      font-size: 20px;
+    }
+    .ant-input-search i {
+      color: #fff;
+    }
+    .ant-input {
+      border: 0;
+      background-color: #282b33;
+      &:focus {
+        background-color: #fff;
+      }
+      &:focus + span i {
+        color: #282b33;
+      }
+    }
+  }
+}
