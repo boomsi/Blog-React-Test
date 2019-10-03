@@ -16,7 +16,7 @@ class App extends React.Component {
       <div className="container">
         <header className='header'>
           <Row type='flex' align='middle'>
-            <Col span={14} offset={2}>
+            <Col md={14} offset={2} xs={6}>
               <Menu defaultSelectedKeys={['home']} mode="horizontal" theme='light'>
                 <Menu.Item key="home">
                   Home
@@ -32,7 +32,7 @@ class App extends React.Component {
                 </Menu.Item>
               </Menu>
             </Col>
-            <Col span={8}>
+            <Col md={8} xs={16}>
             <Search
               placeholder="input search text"
               onSearch={value => console.log(value)}
