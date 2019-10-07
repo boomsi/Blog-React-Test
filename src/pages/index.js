@@ -1,6 +1,6 @@
 import React from 'react';
 import './index.less';
-import { Row, Col, Menu, Input } from 'antd'
+import { Row, Col, Menu, Input, Icon } from 'antd'
 import Show from './Show'
 
 const { Search } = Input
@@ -33,17 +33,32 @@ class App extends React.Component {
               </Menu>
             </Col>
             <Col md={8} xs={16}>
-            <Search
-              placeholder="input search text"
-              onSearch={value => console.log(value)}
-              style={{ width: 200 }}
-            />
+              <Search
+                placeholder="input search text"
+                onSearch={value => console.log(value)}
+                style={{ width: 200 }}
+              />
             </Col>
           </Row>
         </header>
         <div className='body'>
           <Show />
         </div>
+        <footer className='footer'>
+          <ul>
+            <li><p><Icon type="user" />Design By Boomsi</p>
+            </li>
+            <li>
+              <p><Icon type="github" />Follow Me By Github</p>
+            </li>
+            <li>
+              <p><Icon type="mail" />Comcact Me By Email</p>
+            </li>
+            <li>
+              <p><Icon type="clock-circle" />2019.10.07~</p>
+            </li>
+          </ul>
+        </footer>
       </div>
     )
   }

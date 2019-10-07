@@ -1,11 +1,38 @@
 .blog_wrapper {
   & > p {
-    font-size: 22px;
+    font-size: 28px;
     font-weight: 500;
     margin-bottom: 16px;
     & > em {
       color: #38f;
       font-weight: 900;
+    }
+  }
+  .blog_item_ul {
+    list-style: none;
+    padding-left: 0;
+    li {
+      border-bottom: 1px solid #eee;
+    }
+    & li:last-child {
+      border: 0;
+    }
+    .blog_title {
+      font-size: 24px;
+    }
+    .blog_time {
+      font-size: 14px;
+      color: #999;
+      .blog_update_time {
+        margin-right: 24px;
+      }
+      .blog_look_count {
+        margin-left: 8px;
+        em {
+          font-style: normal;
+          margin-left: 4px;
+        }
+      }
     }
   }
 }

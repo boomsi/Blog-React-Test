@@ -13,14 +13,16 @@ function App() {
       <div className='safe_introduce'>
         <Interduce />
       </div>
+      <div className='show_content'>
       <Row gutter={24}>
-        <Col md={8} xs={22} offset={2}>
+        <Col md={10} xs={24}>
           <Blog />
         </Col>
-        <Col md={12} xs={24}>
+        <Col md={14} xs={24}>
           <Life />
         </Col>
       </Row>
+      </div>
     </div>
   )
 }

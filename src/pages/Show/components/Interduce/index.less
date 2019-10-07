@@ -1,6 +1,8 @@
 .introduce_wrapper {
   background-color:#888888;
   height: 250px;
+  padding: 0 100px;
+  background: url(./images/bg.jpg) no-repeat center/cover;
 
   .author {
     height: 250px;
@@ -16,5 +18,11 @@
     font-size: 18px;
     text-indent: 2em;
     text-align: right;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .introduce_wrapper {
+    padding: 0 48px;
   }
 }
